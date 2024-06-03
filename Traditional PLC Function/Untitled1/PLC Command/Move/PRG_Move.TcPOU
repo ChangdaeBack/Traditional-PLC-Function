@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.6">
+  <POU Name="PRG_Move" Id="{f99c42f8-3597-47e7-b94e-ea5fc61400f3}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_Move
+VAR
+	var1 : INT := 11;
+	var2 : INT := 20;
+	
+	var3 : INT := 11;
+	var4 : INT := 30;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[var2 := MOVE(var1);
+var4 := var3;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

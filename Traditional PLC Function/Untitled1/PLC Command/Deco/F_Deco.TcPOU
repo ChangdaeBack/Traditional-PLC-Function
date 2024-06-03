@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.6">
+  <POU Name="F_Deco" Id="{41ab48d3-2652-489f-af31-e14335e68caf}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION F_Deco : DWORD
+VAR_INPUT
+	DecoIn : UINT;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[CASE DecoIn OF
+	1: F_Deco.0 := TRUE;
+	2: F_Deco.1 := TRUE;
+	3: F_Deco.2 := TRUE;
+	4: F_Deco.3 := TRUE;
+	5: F_Deco.4 := TRUE;
+	6: F_Deco.5 := TRUE;
+	7: F_Deco.6 := TRUE;
+	8: F_Deco.7 := TRUE;
+	9: F_Deco.8 := TRUE;
+	10:F_Deco.9 := TRUE;
+	11:F_Deco.10:= TRUE;
+	12:F_Deco.11:= TRUE;
+	13:F_Deco.12:= TRUE;
+	14:F_Deco.13:= TRUE;
+	15:F_Deco.14:= TRUE;
+	16:F_Deco.15:= TRUE;
+	17:F_Deco.16:= TRUE;
+	18:F_Deco.17:= TRUE;
+	19:F_Deco.18:= TRUE;
+	20:F_Deco.19:= TRUE;
+	21:F_Deco.20 := TRUE;
+	22:F_Deco.21 := TRUE;
+	23:F_Deco.22 := TRUE;
+	24:F_Deco.23 := TRUE;
+	25:F_Deco.24 := TRUE;
+	26:F_Deco.25 := TRUE;
+	27:F_Deco.26 := TRUE;
+	28:F_Deco.27 := TRUE;
+	29:F_Deco.28 := TRUE;
+	30:F_Deco.29 := TRUE;
+	31:F_Deco.30 := TRUE;
+	32:F_Deco.31 := TRUE;
+	ELSE
+		RETURN;
+END_CASE]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

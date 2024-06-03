@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.6">
+  <POU Name="PRG_DecoSample" Id="{f1ad0c7a-a177-4957-a52b-e1edce7e3ad7}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_DecoSample
+VAR
+	(* Deco 기능 테스트 *)
+	nWord_test1 : DWORD;
+	nWord_test2 : DWORD;
+	nWord_test3 : DWORD;
+	//마우스 우클릭 => Display mode => Binary 선택시 온라인값 이진수로 확인가능 
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[nWord_Test1 := F_Deco(1); //1번째 비트 TRUE
+nWord_Test2 := F_Deco(5); //5번째 비트 TRUE
+nWord_Test3 := F_Deco(31);//31번째 비트 TRUE
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
